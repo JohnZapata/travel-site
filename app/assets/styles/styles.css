@@ -1,0 +1,11 @@
+body
+{
+    color:red;
+}
+$mainBlue:#ccc333;
+body
+{
+    h2{
+        color: $mainBlue;
+    }
+}
