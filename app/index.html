@@ -4,13 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>Clear View Escapes</title>
-  <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
+  <meta name="description" content="Your clarify. One trip away. We create soul restoring journeys that inspire you to be you.">
 </head>
 <body>
   <header>
     <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#">Get in Touch</a>
+    <a href="#" class="btn">Get in Touch</a>
     <nav>
       <ul>
         <li><a href="#our-beginning">Our Beginning</a></li>
@@ -21,15 +21,23 @@
   </header>
 
   <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
-    <h1>Your clarity.</h1>
-    <h2>One trip away.</h2>
-    <p>We create soul restoring journeys that inspire you to be you.</p>
-    <p><a href="#">Get Started Today</a></p>
+    <picture>
+      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains">
+    </picture>
+
+    <div class="large-hero__text-content">
+      <h1 class="large-hero__title">Your clarity.</h1>
+      <h2 class="large-hero__subtitle">One trip away.</h2>
+      <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
+      <p><a href="#" class="btn btn--orange btn--large">Get Started Today</a></p>
+    </div>
   </div>
 
   <div id="our-beginning">
-    <h2>The first trip we planned was our own.hellooooooo</h2>
+    <h2>The first trip we planned was our own.</h2>
     <h3>Ever since, we&rsquo;ve been working to make travel better for everyone.</h3>
     <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
     <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
@@ -81,8 +89,26 @@
   </div>
 
   <footer>
-    <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
+    <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
   </footer>
+  <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
+  This is the end of the "modal" reference HTML -->
   <script src="bundled.js"></script>
 </body>
 </html>
