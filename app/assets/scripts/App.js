@@ -28,7 +28,7 @@ if(module.hot)
        }
      })
    })
-
+   
 
 
 let stickyHeadr = new StickyHeader();
